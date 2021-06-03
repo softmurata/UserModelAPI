@@ -7,13 +7,15 @@ type User struct {
 	ID   int
 	Name string
 	Age  int
+	Sex  string
 }
 
 // NewUser creates user instance
-func NewUser(name string, age int) *User {
+func NewUser(name string, age int, sex string) *User {
 	return &User{
 		Name: name,
 		Age:  age,
+		Sex:  sex,
 	}
 }
 

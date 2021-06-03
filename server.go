@@ -8,9 +8,9 @@ import (
 
 func main() {
 
-	user := models.NewUser("murata", 24)
+	user := models.NewUser("murata", 24, "man")
 	data := models.NewDataType("0", "1", "Tokyo")
-	fmt.Println(user.Name)
+	fmt.Println(user.Name, user.Age, user.Sex)
 	fmt.Println(data.Keyword, data.Location)
 }
 
