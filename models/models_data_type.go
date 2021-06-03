@@ -5,7 +5,7 @@ type dataType struct {
 	Keyword string
 }
 
-func NewDataType(rid string, keyword string) *User {
+func NewDataType(rid string, keyword string) *dataType {
 	return &dataType{
 		Rid:     rid,
 		Keyword: keyword,
