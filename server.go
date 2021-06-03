@@ -9,7 +9,7 @@ import (
 func main() {
 
 	user := models.NewUser("murata", 24)
-	var data models.dataType
+	data := models.NewDataType("0", "1")
 	fmt.Println(user.Name)
 }
 
