@@ -1,13 +1,15 @@
 package models
 
 type dataType struct {
-	Rid     string
-	Keyword string
+	Rid      string
+	Keyword  string
+	Location string
 }
 
-func NewDataType(rid string, keyword string) *dataType {
+func NewDataType(rid string, keyword string, loc string) *dataType {
 	return &dataType{
-		Rid:     rid,
-		Keyword: keyword,
+		Rid:      rid,
+		Keyword:  keyword,
+		Location: loc,
 	}
 }
